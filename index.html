@@ -5,7 +5,17 @@
   <body>
     <p src="app/test.txt"></p>
     
-    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+    <button type="button" onclick="alert('Hello world!')">Click Me!</button><br><br>
+
+    <input type="file" id="file-selector" multiple>
+<script>
+  const fileSelector = document.getElementById('file-selector');
+  fileSelector.addEventListener('change', (event) => {
+    const fileList = event.target.files;
+    console.log(fileList);
+  });
+</script>
+
 </body>
 
 </html>
