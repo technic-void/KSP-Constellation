@@ -19,11 +19,11 @@
   <input type="text" id="cel_bodies_input"><br>
       
   <script>
-    function printbody(){
-    const exTest = document.getElementById('cel_bodies_input');
-    console.log(exTest);}
+    const celbody = document.getElementById('cel_bodies_input');
+  celbody.addEventListener('change', (event) => {
+    console.log(celbody);
+  });
   </script>
-      <button type="button" onclick="onclick="printbody();">activate output</button><br>
       
 
 </body>
