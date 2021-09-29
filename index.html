@@ -16,14 +16,17 @@
   });
 </script><br><br>
   Input a celestial body:
-  <input type="text" id="cel_bodies_input"><br>
-      
-  <script>
-    const celbody = document.getElementById('cel_bodies_input');
-  celbody.addEventListener('change', (event) => {
-    console.log(celbody);
-  });
-  </script>
+  <input type="text" id="cel_bodies_input">
+
+<script>function runscript(){
+    const celbody = document.getElementById('cel_bodies_input').value;
+   document.getElementById('celbody').innerHTML=celbody
+  }
+</script>
+
+<button type="button" onclick="runscript()">Click this Button</button>
+
+<p id="celbody"></p>
       
 
 </body>
